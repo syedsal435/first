@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" href="sha.css"></link>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html");
+ 
+  $("#body").load("body.html");
+  $("#scroll").load("scroll.html");
+  $("#card").load("cards.html");
+  $("#footer").load("footer.html");
+});
+</script> 
+
+</head>
+  <body>
+    <div id="header"></div>
+    <div class="dark-background text-center" id ="sss">
+      <div class="d-flex flex-row justify-content-center "> 
+        <img
+          src="img/Zoop1.png"
+          class="bulb-image"
+          id="bulbImage"
+        />
+      </div>
+      <div class="d-flex flex-row justify-content-center pt-1">
+        <div class="switch-board">
+          <h1 class="switch-status" id="switchStatus">INFORMATION</h1>
+          <button class="off-switch" id="offSwitch" onclick="switchOff()">
+           LESS
+          </button>
+          <button class="on-switch" id="onSwitch" onclick="switchOn()">
+            MORE
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+<script src="salo.js"></script>
+</html>
